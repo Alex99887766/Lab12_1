@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ПП-21 Гнатецький</title>
+</head>
+<body>
+<script>
+document.write("<h2 style='text-align:center'>Лабораторна робота 12.1</h2>");
+document.write("<p>Введіть код мови.</p>");
+
+function getLanguageName(lang) {
+    if (lang === "ua") {
+        return "Українська";
+    } else if (lang === "en") {
+        return "Англійська";
+    } else if (lang === "pl") {
+        return "Польська";
+    } else if (lang === "de") {
+        return "Німецька";
+    } else {
+        return "Мову невизначено";
+    }
+}
+
+let lang = prompt("Введіть код мови (ua, en, pl, de):");
+document.write("<p>Мова: " + getLanguageName(lang) + "</p>");
+</script>
+</body>
+</html>
